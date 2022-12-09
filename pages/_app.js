@@ -10,7 +10,7 @@ function MyApp({ Component, pageProps }) {
   return (
     <>  
           <Head>
-              <title>Urban Real Estate</title>
+              <title>Urban Residence Real Estate</title>
           </Head>
           <Navbar /> 
           <Component {...pageProps} />
