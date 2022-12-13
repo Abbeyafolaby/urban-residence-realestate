@@ -1,4 +1,5 @@
 import { useState } from "react";
+import Link from "next/link";
 
 export default function NavBar() {
     const [navbar, setNavbar] = useState(false);
@@ -56,18 +57,27 @@ export default function NavBar() {
                         }`}
                     >
                         <ul className="items-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0">
-                            <li className="text-gray-600 hover:text-blue-600">
-                                <a href="javascript:void(0)">Home</a>
-                            </li>
-                            <li className="text-gray-600 hover:text-blue-600">
-                                <a href="javascript:void(0)">Blog</a>
-                            </li>
-                            <li className="text-gray-600 hover:text-blue-600">
-                                <a href="javascript:void(0)">About US</a>
-                            </li>
-                            <li className="text-gray-600 hover:text-blue-600">
-                                <a href="javascript:void(0)">Contact US</a>
-                            </li>
+                            <Link href="/" passHref>
+                                <li className="text-slate-800 hover:text-[#00afef]">
+                                    Home
+                                </li>
+                            </Link>
+                            <Link href="/Search?purpose=For-Rent" passHref>
+                                <li className="text-slate-800 hover:text-[#00afef]">
+                                    For Rentals
+                                </li> 
+                            </Link>
+                            <Link href="/Search?purpose=For-Sale" passHref>
+                                <li className="text-slate-800 hover:text-[#00afef]">
+                                    For Sale
+                                </li>
+                            </Link>
+                            <Link href="/Search" passHref>
+                                <li className="text-slate-800 hover:text-[#00afef]">
+                                     Search
+                                </li>
+                            </Link>
+                            
                         </ul>
                     </div>
                 </div>
