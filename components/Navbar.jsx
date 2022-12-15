@@ -58,22 +58,22 @@ export default function NavBar() {
                     >
                         <ul className="items-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0">
                             <Link href="/" passHref>
-                                <li className="text-slate-800 hover:text-[#00afef]">
+                                <li className="text-slate-800 hover:text-[#00afef] pb-4 md:pb-0">
                                     Home
                                 </li>
                             </Link>
                             <Link href="/Search?purpose=For-Rent" passHref>
-                                <li className="text-slate-800 hover:text-[#00afef]">
+                                <li className="text-slate-800 hover:text-[#00afef] pb-4 md:pb-0">
                                     For Rentals
                                 </li> 
                             </Link>
                             <Link href="/Search?purpose=For-Sale" passHref>
-                                <li className="text-slate-800 hover:text-[#00afef]">
+                                <li className="text-slate-800 hover:text-[#00afef] pb-4 md:pb-0">
                                     For Sale
                                 </li>
                             </Link>
                             <Link href="/Search" passHref>
-                                <li className="text-slate-800 hover:text-[#00afef]">
+                                <li className="text-slate-800 hover:text-[#00afef] pb-4 md:pb-0">
                                      Search
                                 </li>
                             </Link>
